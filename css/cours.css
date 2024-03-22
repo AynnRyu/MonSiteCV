@@ -1,0 +1,70 @@
+*{margin: 0;padding: 0;}
+
+main{background: blue;}
+section{padding-left: 2vw;}
+aside{background: beige;}
+main,aside{min-height: 100vh}
+
+article{min-height: 400px;}
+
+header>article{background: red;
+height: 200px;}
+
+.row>*{padding-left: 0;padding-right: 0;}
+
+#menu{position: fixed;
+right: 12px;
+top: 40vh;
+display: block;
+min-height: 60px;
+width: 70px;
+background: black;
+list-style: none;}
+
+#menu>li>a{text-decoration: none;
+    color: white;}
+
+#menu>li{display: block;
+    width: 85px;
+    height: 37px;
+    border: solid white;
+    text-align: center;
+line-height: 20px;}
+
+#toto,#tutu,#titi{width: 80%;
+height: 80vh;
+background: rgba(0,0,0,.6);
+position: fixed;
+top: 10vh;
+color: white;}
+
+#toto:not(:target),
+#tutu:not(:target),
+#titi:not(:target){left: 100%;
+transition}
+
+figure+ul>a{
+    text-decoration: none font-size : 20px}
+
+#toto:target,
+#tutu:target,
+#titi:target{left: 10%;}
+
+figure+ul>a:first-child>span::after{
+    content: 'yannriou18@gmail.com';
+    color: black;}
+
+figure+ul>a:last-child>span::before{
+    content: '06 10 10 10 10';
+color: greenyellow;}
+
+h2>span::before{content: '';color: gold;
+    font-size: 30px;
+    animation: yann 1s ease-in-out infinite;}
+
+@keyframes yann{
+    0%{content:'Dev Web'}
+    20%{content:''}
+    50%{content:'Web Marketer'}
+    80%{content:'Communicty Manager'}
+}

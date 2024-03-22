@@ -1,0 +1,13 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+main{background: silver;}
+aside{background: royalblue;}
+main,aside{min-height: 100vh}
+
+h2+ul>a:first-child>span::after{
+    content: 'yannriou18@gmail.com';
+    color: red;}
+
+h2+ul>a:last-child>span::before{
+    content: '06 95 88 76 70';
+    color: greenyellow;}
